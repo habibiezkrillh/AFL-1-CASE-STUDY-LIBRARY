@@ -1,0 +1,951 @@
+public class Pengarang {
+    private int idPengarang;
+    private String nama;
+    private String alamat;
+    private String noTelp;
+    private String email;
+
+    public Pengarang(int idPengarang, String nama, String alamat, String noTelp, String email) {
+        this.idPengarang = idPengarang;
+        this.nama = nama;
+        this.alamat = alamat;
+        this.noTelp = noTelp;
+        this.email = email;
+    }
+
+    public int getIdPengarang() {
+        return idPengarang;
+    }
+
+    public void setIdPengarang(int idPengarang) {
+        this.idPengarang = idPengarang;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    public String getNoTelp() {
+        return noTelp;
+    }
+
+    public void setNoTelp(String noTelp) {
+        this.noTelp = noTelp;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "Pengarang{" +
+                "idPengarang=" + idPengarang +
+                ", nama='" + nama + '\'' +
+                ", alamat='" + alamat + '\'' +
+                ", noTelp='" + noTelp + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
+}
+public class Penerbit {
+    private int idPenerbit;
+    private String nama;
+    private String alamat;
+    private String noTelp;
+    private String email;
+
+    public Penerbit(int idPenerbit, String nama, String alamat, String noTelp, String email) {
+        this.idPenerbit = idPenerbit;
+        this.nama = nama;
+        this.alamat = alamat;
+        this.noTelp = noTelp;
+        this.email = email;
+    }
+
+    public int getIdPenerbit() {
+        return idPenerbit;
+    }
+
+    public void setIdPenerbit(int idPenerbit) {
+        this.idPenerbit = idPenerbit;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    public String getNoTelp() {
+        return noTelp;
+    }
+
+    public void setNoTelp(String noTelp) {
+        this.noTelp = noTelp;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "Penerbit{" +
+                "idPenerbit=" + idPenerbit +
+                ", nama='" + nama + '\'' +
+                ", alamat='" + alamat + '\'' +
+                ", noTelp='" + noTelp + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
+}
+public class Kategori {
+    private int idKategori;
+    private String nama;
+    private String deskripsi;
+
+    public Kategori(int idKategori, String nama, String deskripsi) {
+        this.idKategori = idKategori;
+        this.nama = nama;
+        this.deskripsi = deskripsi;
+    }
+
+    public int getIdKategori() {
+        return idKategori;
+    }
+
+    public void setIdKategori(int idKategori) {
+        this.idKategori = idKategori;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getDeskripsi() {
+        return deskripsi;
+    }
+
+    public void setDeskripsi(String deskripsi) {
+        this.deskripsi = deskripsi;
+    }
+
+    @Override
+    public String toString() {
+        return "Kategori{" +
+                "idKategori=" + idKategori +
+                ", nama='" + nama + '\'' +
+                ", deskripsi='" + deskripsi + '\'' +
+                '}';
+    }
+}
+public class BukuMajalah {
+    private int idBuku;
+    private int idPenerbit;
+    private int idPengarang;
+    private int idKategori;
+    private String jenisSampul;
+    private String edisi;
+    private String judul;
+    private String bukuMajalahCol;
+    private int tahunTerbit;
+    private int jumlahRusak;
+    private int jumlahPinjam;
+    private int jumlahTersedia;
+    private int jumlahTotal;
+    private long ISBN;
+
+    public BukuMajalah(int idBuku, int idPenerbit, int idPengarang, int idKategori, String jenisSampul, String edisi,
+                       String judul, String bukuMajalahCol, int tahunTerbit, int jumlahRusak, int jumlahPinjam, int jumlahTersedia, int jumlahTotal, long ISBN) {
+        this.idBuku = idBuku;
+        this.idPenerbit = idPenerbit;
+        this.idPengarang = idPengarang;
+        this.idKategori = idKategori;
+        this.jenisSampul = jenisSampul;
+        this.edisi = edisi;
+        this.judul = judul;
+        this.bukuMajalahCol = bukuMajalahCol;
+        this.tahunTerbit = tahunTerbit;
+        this.jumlahRusak = jumlahRusak;
+        this.jumlahPinjam = jumlahPinjam;
+        this.jumlahTersedia = jumlahTersedia;
+        this.jumlahTotal = jumlahTotal;
+        this.ISBN = ISBN;
+    }
+
+    public int getIdBuku() {
+        return idBuku;
+    }
+
+    public void setIdBuku(int idBuku) {
+        this.idBuku = idBuku;
+    }
+
+    public int getIdPenerbit() {
+        return idPenerbit;
+    }
+
+    public void setIdPenerbit(int idPenerbit) {
+        this.idPenerbit = idPenerbit;
+    }
+
+    public int getIdPengarang() {
+        return idPengarang;
+    }
+
+    public void setIdPengarang(int idPengarang) {
+        this.idPengarang = idPengarang;
+    }
+
+    public int getIdKategori() {
+        return idKategori;
+    }
+
+    public void setIdKategori(int idKategori) {
+        this.idKategori = idKategori;
+    }
+
+    public String getJenisSampul() {
+        return jenisSampul;
+    }
+
+    public void setJenisSampul(String jenisSampul) {
+        this.jenisSampul = jenisSampul;
+    }
+
+    public String getEdisi() {
+        return edisi;
+    }
+
+    public void setEdisi(String edisi) {
+        this.edisi = edisi;
+    }
+
+    public String getJudul() {
+        return judul;
+    }
+
+    public void setJudul(String judul) {
+        this.judul = judul;
+    }
+
+    public String getBukuMajalahCol() {
+        return bukuMajalahCol;
+    }
+
+    public void setBukuMajalahCol(String bukuMajalahCol) {
+        this.bukuMajalahCol = bukuMajalahCol;
+    }
+
+    public int getTahunTerbit() {
+        return tahunTerbit;
+    }
+
+    public void setTahunTerbit(int tahunTerbit) {
+        this.tahunTerbit = tahunTerbit;
+    }
+
+    public int getJumlahRusak() {
+        return jumlahRusak;
+    }
+
+    public void setJumlahRusak(int jumlahRusak) {
+        this.jumlahRusak = jumlahRusak;
+    }
+
+    public int getJumlahPinjam() {
+        return jumlahPinjam;
+    }
+
+    public void setJumlahPinjam(int jumlahPinjam) {
+        this.jumlahPinjam = jumlahPinjam;
+    }
+
+    public int getJumlahTersedia() {
+        return jumlahTersedia;
+    }
+
+    public void setJumlahTersedia(int jumlahTersedia) {
+        this.jumlahTersedia = jumlahTersedia;
+    }
+
+    public int getJumlahTotal() {
+        return jumlahTotal;
+    }
+
+    public void setJumlahTotal(int jumlahTotal) {
+        this.jumlahTotal = jumlahTotal;
+    }
+
+    public long getISBN() {
+        return ISBN;
+    }
+
+    public void setISBN(long ISBN) {
+        this.ISBN = ISBN;
+    }
+
+    @Override
+    public String toString() {
+        return "BukuMajalah{" +
+                "idBuku=" + idBuku +
+                ", idPenerbit=" + idPenerbit +
+                ", idPengarang=" + idPengarang +
+                ", idKategori=" + idKategori +
+                ", jenisSampul='" + jenisSampul + '\'' +
+                ", edisi='" + edisi + '\'' +
+                ", judul='" + judul + '\'' +
+                ", bukuMajalahCol='" + bukuMajalahCol + '\'' +
+                ", tahunTerbit=" + tahunTerbit +
+                ", jumlahRusak=" + jumlahRusak +
+                ", jumlahPinjam=" + jumlahPinjam +
+                ", jumlahTersedia=" + jumlahTersedia +
+                ", jumlahTotal=" + jumlahTotal +
+                ", ISBN=" + ISBN +
+                '}';
+    }
+}
+import java.sql.Date;
+
+public class CD {
+    private int idCD;
+    private String judul;
+    private Date tahunTerbit;
+    private int jumlahTotal;
+    private int jumlahTersedia;
+    private int jumlahPinjam;
+    private int jumlahRusak;
+    private int idPenerbit;
+    private int idPengarang;
+    private int idKategori;
+
+    public CD(int idCD, String judul, Date tahunTerbit, int jumlahTotal, int jumlahTersedia, int jumlahPinjam, int jumlahRusak, int idPenerbit, int idPengarang, int idKategori) {
+        this.idCD = idCD;
+        this.judul = judul;
+        this.tahunTerbit = tahunTerbit;
+        this.jumlahTotal = jumlahTotal;
+        this.jumlahTersedia = jumlahTersedia;
+        this.jumlahPinjam = jumlahPinjam;
+        this.jumlahRusak = jumlahRusak;
+        this.idPenerbit = idPenerbit;
+        this.idPengarang = idPengarang;
+        this.idKategori = idKategori;
+    }
+
+    public int getIdCD() {
+        return idCD;
+    }
+
+    public void setIdCD(int idCD) {
+        this.idCD = idCD;
+    }
+
+    public String getJudul() {
+        return judul;
+    }
+
+    public void setJudul(String judul) {
+        this.judul = judul;
+    }
+
+    public Date getTahunTerbit() {
+        return tahunTerbit;
+    }
+
+    public void setTahunTerbit(Date tahunTerbit) {
+        this.tahunTerbit = tahunTerbit;
+    }
+
+    public int getJumlahTotal() {
+        return jumlahTotal;
+    }
+
+    public void setJumlahTotal(int jumlahTotal) {
+        this.jumlahTotal = jumlahTotal;
+    }
+
+    public int getJumlahTersedia() {
+        return jumlahTersedia;
+    }
+
+    public void setJumlahTersedia(int jumlahTersedia) {
+        this.jumlahTersedia = jumlahTersedia;
+    }
+
+    public int getJumlahPinjam() {
+        return jumlahPinjam;
+    }
+
+    public void setJumlahPinjam(int jumlahPinjam) {
+        this.jumlahPinjam = jumlahPinjam;
+    }
+
+    public int getJumlahRusak() {
+        return jumlahRusak;
+    }
+
+    public void setJumlahRusak(int jumlahRusak) {
+        this.jumlahRusak = jumlahRusak;
+    }
+
+    public int getIdPenerbit() {
+        return idPenerbit;
+    }
+
+    public void setIdPenerbit(int idPenerbit) {
+        this.idPenerbit = idPenerbit;
+    }
+
+    public int getIdPengarang() {
+        return idPengarang;
+    }
+
+    public void setIdPengarang(int idPengarang) {
+        this.idPengarang = idPengarang;
+    }
+
+    public int getIdKategori() {
+        return idKategori;
+    }
+
+    public void setIdKategori(int idKategori) {
+        this.idKategori = idKategori;
+    }
+
+    @Override
+    public String toString() {
+        return "CD{" +
+                "idCD=" + idCD +
+                ", judul='" + judul + '\'' +
+                ", tahunTerbit=" + tahunTerbit +
+                ", jumlahTotal=" + jumlahTotal +
+                ", jumlahTersedia=" + jumlahTersedia +
+                ", jumlahPinjam=" + jumlahPinjam +
+                ", jumlahRusak=" + jumlahRusak +
+                ", idPenerbit=" + idPenerbit +
+                ", idPengarang=" + idPengarang +
+                ", idKategori=" + idKategori +
+                '}';
+    }
+}
+public class Mahasiswa {
+    private int idMahasiswa;
+    private long NIM;
+    private String nama;
+    private String prodi;
+    private String department;
+
+    public Mahasiswa(int idMahasiswa, long NIM, String nama, String prodi, String department) {
+        this.idMahasiswa = idMahasiswa;
+        this.NIM = NIM;
+        this.nama = nama;
+        this.prodi = prodi;
+        this.department = department;
+    }
+
+    public int getIdMahasiswa() {
+        return idMahasiswa;
+    }
+
+    public void setIdMahasiswa(int idMahasiswa) {
+        this.idMahasiswa = idMahasiswa;
+    }
+
+    public long getNIM() {
+        return NIM;
+    }
+
+    public void setNIM(long NIM) {
+        this.NIM = NIM;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getProdi() {
+        return prodi;
+    }
+
+    public void setProdi(String prodi) {
+        this.prodi = prodi;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    @Override
+    public String toString() {
+        return "Mahasiswa{" +
+                "idMahasiswa=" + idMahasiswa +
+                ", NIM=" + NIM +
+                ", nama='" + nama + '\'' +
+                ", prodi='" + prodi + '\'' +
+                ", department='" + department + '\'' +
+                '}';
+    }
+}
+public class DosenStaff {
+    private long NIK;
+    private String nama;
+    private String prodi;
+    private String department;
+
+    public DosenStaff(long NIK, String nama, String prodi, String department) {
+        this.NIK = NIK;
+        this.nama = nama;
+        this.prodi = prodi;
+        this.department = department;
+    }
+
+    public long getNIK() {
+        return NIK;
+    }
+
+    public void setNIK(long NIK) {
+        this.NIK = NIK;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getProdi() {
+        return prodi;
+    }
+
+    public void setProdi(String prodi) {
+        this.prodi = prodi;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    @Override
+    public String toString() {
+        return "DosenStaff{" +
+                "NIK=" + NIK +
+                ", nama='" + nama + '\'' +
+                ", prodi='" + prodi + '\'' +
+                ", department='" + department + '\'' +
+                '}';
+    }
+}
+public class Transaksi {
+    private int idTransaksi;
+    private int idBuku;
+    private int idCD;
+    private int idClient;
+    private long ISBN;
+    private String pinjamDetail;
+    private String kembaliDetail;
+    private String statusRusak;
+    private int totalHargaRusak;
+    private int jumlahBayar;
+    private int totalRusak;
+    private int hargaTelat;
+
+    public Transaksi(int idTransaksi, int idBuku, int idCD, int idClient, long ISBN, String pinjamDetail, String kembaliDetail, String statusRusak,
+                     int totalHargaRusak, int jumlahBayar, int totalRusak, int hargaTelat) {
+        this.idTransaksi = idTransaksi;
+        this.idBuku = idBuku;
+        this.idCD = idCD;
+        this.idClient = idClient;
+        this.ISBN = ISBN;
+        this.pinjamDetail = pinjamDetail;
+        this.kembaliDetail = kembaliDetail;
+        this.statusRusak = statusRusak;
+        this.totalHargaRusak = totalHargaRusak;
+        this.jumlahBayar = jumlahBayar;
+        this.totalRusak = totalRusak;
+        this.hargaTelat = hargaTelat;
+    }
+
+    public int getIdTransaksi() {
+        return idTransaksi;
+    }
+
+    public void setIdTransaksi(int idTransaksi) {
+        this.idTransaksi = idTransaksi;
+    }
+
+    public int getIdBuku() {
+        return idBuku;
+    }
+
+    public void setIdBuku(int idBuku) {
+        this.idBuku = idBuku;
+    }
+
+    public int getIdCD() {
+        return idCD;
+    }
+
+    public void setIdCD(int idCD) {
+        this.idCD = idCD;
+    }
+
+    public int getIdClient() {
+        return idClient;
+    }
+
+    public void setIdClient(int idClient) {
+        this.idClient = idClient;
+    }
+
+    public long getISBN() {
+        return ISBN;
+    }
+
+    public void setISBN(long ISBN) {
+        this.ISBN = ISBN;
+    }
+
+    public String getPinjamDetail() {
+        return pinjamDetail;
+    }
+
+    public void setPinjamDetail(String pinjamDetail) {
+        this.pinjamDetail = pinjamDetail;
+    }
+
+    public String getKembaliDetail() {
+        return kembaliDetail;
+    }
+
+    public void setKembaliDetail(String kembaliDetail) {
+        this.kembaliDetail = kembaliDetail;
+    }
+
+    public String getStatusRusak() {
+        return statusRusak;
+    }
+
+    public void setStatusRusak(String statusRusak) {
+        this.statusRusak = statusRusak;
+    }
+
+    public int getTotalHargaRusak() {
+        return totalHargaRusak;
+    }
+
+    public void setTotalHargaRusak(int totalHargaRusak) {
+        this.totalHargaRusak = totalHargaRusak;
+    }
+
+    public int getJumlahBayar() {
+        return jumlahBayar;
+    }
+
+    public void setJumlahBayar(int jumlahBayar) {
+        this.jumlahBayar = jumlahBayar;
+    }
+
+    public int getTotalRusak() {
+        return totalRusak;
+    }
+
+    public void setTotalRusak(int totalRusak) {
+        this.totalRusak = totalRusak;
+    }
+
+    public int getHargaTelat() {
+        return hargaTelat;
+    }
+
+    public void setHargaTelat(int hargaTelat) {
+        this.hargaTelat = hargaTelat;
+    }
+
+    @Override
+    public String toString() {
+        return "Transaksi{" +
+                "idTransaksi=" + idTransaksi +
+                ", idBuku=" + idBuku +
+                ", idCD=" + idCD +
+                ", idClient=" + idClient +
+                ", ISBN=" + ISBN +
+                ", pinjamDetail='" + pinjamDetail + '\'' +
+                ", kembaliDetail='" + kembaliDetail + '\'' +
+                ", statusRusak='" + statusRusak + '\'' +
+                ", totalHargaRusak=" + totalHargaRusak +
+                ", jumlahBayar=" + jumlahBayar +
+                ", totalRusak=" + totalRusak +
+                ", hargaTelat=" + hargaTelat +
+                '}';
+    }
+}
+``
+
+### Kelas `Pustakawan`
+```java
+public class Pustakawan {
+    private int idPustakawan;
+    private int idBuku;
+    private int idCD;
+    private int idTransaksi;
+    private String nama;
+    private String username;
+    private String email;
+    private String password;
+    private String jenisKelamin;
+    private String level;
+
+    public Pustakawan(int idPustakawan, int idBuku, int idCD, int idTransaksi, String nama, String username, String email, String password,
+                      String jenisKelamin, String level) {
+        this.idPustakawan = idPustakawan;
+        this.idBuku = idBuku;
+        this.idCD = idCD;
+        this.idTransaksi = idTransaksi;
+        this.nama = nama;
+        this.username = username;
+        this.email = email;
+        this.password = password;
+        this.jenisKelamin = jenisKelamin;
+        this.level = level;
+    }
+
+    public int getIdPustakawan() {
+        return idPustakawan;
+    }
+
+    public void setIdPustakawan(int idPustakawan) {
+        this.idPustakawan = idPustakawan;
+    }
+
+    public int getIdBuku() {
+        return idBuku;
+    }
+
+    public void setIdBuku(int idBuku) {
+        this.idBuku = idBuku;
+    }
+
+    public int getIdCD() {
+        return idCD;
+    }
+
+    public void setIdCD(int idCD) {
+        this.idCD = idCD;
+    }
+
+    public int getIdTransaksi() {
+        return idTransaksi;
+    }
+
+    public void setIdTransaksi(int idTransaksi) {
+        this.idTransaksi = idTransaksi;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getJenisKelamin() {
+        return jenisKelamin;
+    }
+
+    public void setJenisKelamin(String jenisKelamin) {
+        this.jenisKelamin = jenisKelamin;
+    }
+
+    public String getLevel() {
+        return level;
+    }
+
+    public void setLevel(String level) {
+        this.level = level;
+    }
+
+    @Override
+    public String toString() {
+        return "Pustakawan{" +
+                "idPustakawan=" + idPustakawan +
+                ", idBuku=" + idBuku +
+                ", idCD=" + idCD +
+                ", idTransaksi=" + idTransaksi +
+                ", nama='" + nama + '\'' +
+                ", username='" + username + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", jenisKelamin='" + jenisKelamin + '\'' +
+                ", level='" + level + '\'' +
+                '}';
+    }
+}
+import java.util.ArrayList;
+import java.util.Date;
+
+public class Main {
+    public static void main(String[] args) {
+        // Membuat objek pengarang
+        Pengarang pengarang = new Pengarang(1, "Ahmad", "Jl. Mawar No. 10", "081234567890", "ahmad@example.com");
+
+        // Membuat objek penerbit
+        Penerbit penerbit = new Penerbit(1, "Gramedia", "Jl. Melati No. 20", "081234567891", "info@gramedia.com");
+
+        // Membuat objek kategori
+        Kategori kategori = new Kategori(1, "Fiksi", "Kategori untuk buku fiksi");
+
+        // Membuat objek buku majalah
+        BukuMajalah bukuMajalah = new BukuMajalah(
+            1,
+            penerbit.getIdPenerbit(),
+            pengarang.getIdPengarang(),
+            kategori.getIdKategori(),
+            "Softcover",
+            "Pertama",
+            "Harry Potter",
+            "Fiksi Fantasi",
+            2000,
+            1,
+            2,
+            3,
+            6,
+            1234567890123L
+        );
+
+        // Membuat objek CD
+        CD cd = new CD(
+            1,
+            "Album Terbaru",
+            new java.sql.Date((new Date()).getTime()),
+            5,
+            3,
+            1,
+            1,
+            penerbit.getIdPenerbit(),
+            pengarang.getIdPengarang(),
+            kategori.getIdKategori()
+        );
+
+        // Membuat objek mahasiswa
+        Mahasiswa mahasiswa = new Mahasiswa(1, 123456789012345L, "Dian", "Ilmu Komputer", "Fakultas Teknologi");
+
+        // Membuat objek DosenStaff
+        DosenStaff dosenStaff = new DosenStaff(1234567890L, "Budi", "Ilmu Komputer", "Fakultas Teknologi");
+
+        // Membuat objek transaksi
+        Transaksi transaksi = new Transaksi(
+            1,
+            bukuMajalah.getIdBuku(),
+            cd.getIdCD(),
+            mahasiswa.getIdMahasiswa(),
+            bukuMajalah.getISBN(),
+            "Pinjam untuk 1 minggu",
+            "Kembali sebelum tanggal 25 April 2024",
+            "BAIK",
+            50000,
+            100000,
+            1,
+            20000
+        );
+
+        // Membuat objek pustakawan
+        Pustakawan pustakawan = new Pustakawan(
+            1,
+            bukuMajalah.getIdBuku(),
+            cd.getIdCD(),
+            transaksi.getIdTransaksi(),
+            "Susi",
+            "susi",
+            "susi@example.com",
+            "password123",
+            "Perempuan",
+            "Staff"
+        );
+
+        // Simulasi meminjam buku
+        System.out.println("Pustakawan " + pustakawan.getNama() + " membantu meminjam buku dengan detail:");
+        System.out.println("Buku: " + bukuMajalah.getJudul());
+        System.out.println("Peminjam: " + mahasiswa.getNama());
+        System.out.println("Detail Pinjaman: " + transaksi.getPinjamDetail());
+
+        // Simulasi meminjam CD
+        System.out.println("\nPustakawan " + pustakawan.getNama() + " membantu meminjam CD dengan detail:");
+        System.out.println("CD: " + cd.getJudul());
+        System.out.println("Peminjam: " + mahasiswa.getNama());
+        System.out.println("Detail Pinjaman: " + transaksi.getPinjamDetail());
+    }
+}
